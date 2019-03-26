@@ -19,6 +19,11 @@ public final class ModulusExercise
 	private static int modPow(int a, int b, int p) throws ArithmeticException
 	{
 		// HINT: Consider adding something here!
+		while(a < 0) // As long as a is below zero (negative)... 
+	 	{  	    
+			a += p;  // ...keep increasing by the modulus. 
+	 	} 
+
 		if(b == 0)
 		{
 			return 1;   // a^0 = 1 for all a
